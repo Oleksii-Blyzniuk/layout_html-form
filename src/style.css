@@ -1,8 +1,10 @@
 .field {
   display: block;
-  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 .groups {
-  margin: 20px 0;
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
