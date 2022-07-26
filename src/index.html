@@ -32,7 +32,8 @@
           <input 
                 type="text" 
                 name="name" 
-                autocomplete="off" 
+                autocomplete="off"
+                minlength="2"
                 required
               >
         </label>
@@ -51,11 +52,11 @@
           <input 
             type="date" 
             name="date" 
-            value="mm/ dd/ yyyy"
+            value="mm / dd / yyyy"
           >
         </label>
         <label class="field">
-          I accept the term of agreement
+          I accept the term of the agreement
           <input 
             type="checkbox" 
             name="terms" 
@@ -67,7 +68,7 @@
         <legend>Registration
         </legend>
         <label class="field">
-          Email
+          E-mail:
           <input 
             type="email" 
             class="mail" 
@@ -77,11 +78,10 @@
           >
         </label>
         <label class="field">
-        Password
+        Password:
           <input 
             type="password"
-            name="password" 
-            minlength="7" 
+            name="password"
             maxlength="25" 
             autocomplete="off" 
             required
@@ -91,14 +91,13 @@
       <fieldset class="groups">
         <legend>An interesting fact about you!
         </legend>
-        <div class="field">
+        <label class="field">
           Do you love cats?
           <label>
             <input 
               type="radio" 
               name="infocat" 
               value="y" 
-              checked
             >
           Yes
           </label>
@@ -110,10 +109,9 @@
             >
           No
           </label>
-        </div>
-        <!-- <label class="field"> -->
+        </label>
+        <label class="field">
           What is your favourite color?
-        <label>
           <input 
             type="color" 
             name="color" 
@@ -121,7 +119,7 @@
           >
         </label>
         <label class="field">
-        What time do you go to bad?
+          What time do you go to bad?
           <input 
             type="time" 
             name="time" 
@@ -131,23 +129,28 @@
         <label class="field">
         What are your favorite brand of cars?
           <select name="cars" multiple>
-            <option 
+            <!-- <option 
               value="123" 
               disabled 
               selected
-            >
+            > -->
             </option>
-            <option value="BMW">BMW
+            <option value="bmw">BMW
             </option>
-            <option value="AUDI">Audi
+            <option value="audi">Audi
             </option>
-            <option value="BMW">Lada
+            <option value="lada">Lada
             </option>
           </select>
         </label>
         <label class="field">
-        How do you rate our worl?
-          <input type="range" name="rate">
+        How do you rate our work?
+          <input 
+            type="range" 
+            name="rate"
+            step="20"
+            value="0"
+          >
         </label>
       </fieldset>
       <fieldset class="groups">
@@ -156,7 +159,9 @@
         <label class="field">
           Comments:
           <textarea 
-            name="feedback" 
+            name="feedback"
+            cols="15"
+            rows="2"
             autocomplete="off"
           >
           </textarea>
@@ -164,9 +169,9 @@
         <label class="field">
         Would you comment us?
           <select name="comment">
-            <option value="y">yes
+            <option value="yes">yes
             </option>
-            <option value="n">No
+            <option value="no">no
             </option>
           </select>
         </label>
