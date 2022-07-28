@@ -9,9 +9,3 @@
 .field:not(:last-child) {
   padding-bottom: 10px;
 }
-
-/* .groups {
-  display: block;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-}  */
